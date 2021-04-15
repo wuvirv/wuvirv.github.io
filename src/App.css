@@ -78,10 +78,8 @@ html, body, #root {
   transition: all .25s;
   text-align: center;
 }
-.Search:hover {
-  width: 80%;
-}
 .input {
+  width: 80%;
   color: black;
   background-color: rgba(255,255,255,0.7);
 }
@@ -93,10 +91,12 @@ html, body, #root {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  transition: all 1s;
 }
 .searchOpt {
   display: inline-block;
   position: relative;
+  z-index: 1;
   padding: 5px 20px;
   margin: 0 5px;
   width: 80px;
