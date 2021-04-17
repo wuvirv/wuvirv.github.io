@@ -12,7 +12,8 @@
   }
 }
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
+  user-select: none;
 }
 html, body, #root {
   height: 100%;
@@ -42,6 +43,7 @@ html, body, #root {
   object-fit: cover;
   transition: all .5s;
   backface-visibility: hidden;
+  /* pointer-events:none; */
 }
 .cover {
   position: fixed;
@@ -109,8 +111,50 @@ html, body, #root {
 .selected {
   background-color: rgba(255,255,255,.4);
 }
-svg {
+.engine_icon {
   width: 100%;
   height: 100%;
   fill: rgba(255,255,255,0.9);
+}
+.menu {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(255,255,255,.8);
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: left;
+  line-height: 30px;
+  overflow: hidden;
+}
+.menu div {
+  padding-left: 15px;
+  padding-right: 40px;
+}
+.menu div:active {
+  background-color: rgba(0,0,0,.2);
+}
+.menu_icon {
+  width: 14px;
+  height: 14px;
+  fill: rgba(0,0,0,0.6);
+  transform: translateY(2px);
+  margin-right: 15px;
+}
+.setting {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  transition: all 1s;
+  transform: rotate(60deg);
+}
+.setting_icon {
+  width: 22px;
+  height: 22px;
+  fill: rgb(155, 155, 155);
+}
+.nav_box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
