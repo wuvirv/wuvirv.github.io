@@ -8851,7 +8851,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.7.2:
+prop-types@^15.5.0, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npm.taobao.org/prop-types/download/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -9070,6 +9070,14 @@ react-error-overlay@^6.0.9:
   version "6.0.9"
   resolved "https://registry.npm.taobao.org/react-error-overlay/download/react-error-overlay-6.0.9.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-error-overlay%2Fdownload%2Freact-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
   integrity sha1-PHQwEMk1lgjDdezWvHbzXZOZWwo=
+
+react-file-reader@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.npm.taobao.org/react-file-reader/download/react-file-reader-1.1.4.tgz#1838f1f3fa70dcfdef4ef525d74dda3c6312089a"
+  integrity sha1-GDjx8/pw3P3vTvUl103aPGMSCJo=
+  dependencies:
+    prop-types "^15.5.0"
+    uuid4 "^1.0.0"
 
 react-is@^16.8.1:
   version "16.13.1"
@@ -10976,6 +10984,11 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/utils-merge/download/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
+
+uuid4@^1.0.0:
+  version "1.1.4"
+  resolved "https://registry.npm.taobao.org/uuid4/download/uuid4-1.1.4.tgz#80fa0618749110bdb8aa47cc2cc2167c6331f4eb"
+  integrity sha1-gPoGGHSREL24qkfMLMIWfGMx9Os=
 
 uuid@^3.3.2, uuid@^3.4.0:
   version "3.4.0"

@@ -8,12 +8,36 @@
   }
   .engine {
     top: 250px;
-    /* width: 200px; */
   }
+  .input, .Search:hover {
+    width: 80%;
+    color: black;
+    background-color: rgba(255,255,255,0.5);
+  } 
+}
+@media screen and (min-width: 600px) {
+  .Time {
+    top: 115px;
+  }
+  .Search {
+    top: 220px;
+    width: 200px;
+  }
+  .engine {
+    top: 300px;
+  }
+  .input, .Search:hover {
+    width: 30%;
+    color: black;
+    background-color: rgba(255,255,255,0.5);
+  } 
 }
 * {
   box-sizing: border-box;
   user-select: none;
+}
+h1 {
+  font-weight: lighter;
 }
 html, body, #root {
   height: 100%;
@@ -24,47 +48,37 @@ html, body, #root {
 .App {
   position: relative;
   height: 100%;
-  text-align: center;
   background-color: rgb(51, 51, 51);
 }
-.liveBgBox {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition:  all .5s;
-}
 .bgbox{
-  display: block;
-  opacity: 1;
   position: fixed;
+  z-index: 2;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all .5s;
+  transition: all .25s;
   backface-visibility: hidden;
-  /* pointer-events:none; */
 }
 .cover {
   position: fixed;
-  left: 0;
-  top: 0;
+  z-index: 3;
   width: 100%;
   height: 100%;
   background-image: radial-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%), radial-gradient(rgba(0,0,0,0) 33%, rgba(0,0,0,0.3) 166%);
-  transition: all .5s;
+  transition: all .25s;
 }
 .Time {
   position: fixed;
+  z-index: 9;
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  font-weight: inherit;
-  text-shadow: 0 0 20px rgb(0 0 0 / 35%);
+  text-shadow: 0 0 15px rgb(0 0 0 / 30%);
   transition: .25s;
 }
 .Search {
   position: fixed;
+  z-index: 4;
   left: 50%;
   transform: translateX(-50%);
   outline: none;
@@ -80,25 +94,21 @@ html, body, #root {
   transition: all .25s;
   text-align: center;
 }
-.input {
-  width: 80%;
-  color: black;
-  background-color: rgba(255,255,255,0.7);
-}
 .Search::placeholder {
   color: white;
 }
 .engine {
   position: fixed;
+  z-index: 4;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  text-align: center;
   transition: all 1s;
 }
 .searchOpt {
   display: inline-block;
   position: relative;
-  z-index: 1;
   padding: 5px 20px;
   margin: 0 5px;
   width: 80px;
@@ -106,7 +116,7 @@ html, body, #root {
   background-color: rgba(255,255,255,.1);
   border-radius: 20px;
   transition: all .5s;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); 
 }
 .selected {
   background-color: rgba(255,255,255,.4);
@@ -116,45 +126,10 @@ html, body, #root {
   height: 100%;
   fill: rgba(255,255,255,0.9);
 }
-.menu {
+.upload {
   position: absolute;
-  top: 10px;
-  left: 20px;
-  background-color: rgba(255,255,255,.8);
-  border-radius: 10px;
-  font-size: 14px;
-  text-align: left;
-  line-height: 30px;
-  overflow: hidden;
-}
-.menu div {
-  padding-left: 15px;
-  padding-right: 40px;
-}
-.menu div:active {
-  background-color: rgba(0,0,0,.2);
-}
-.menu_icon {
-  width: 14px;
-  height: 14px;
-  fill: rgba(0,0,0,0.6);
-  transform: translateY(2px);
-  margin-right: 15px;
-}
-.setting {
-  position: fixed;
-  top: 15px;
-  right: 20px;
-  transition: all 1s;
-  transform: rotate(60deg);
-}
-.setting_icon {
-  width: 22px;
-  height: 22px;
-  fill: rgb(155, 155, 155);
-}
-.nav_box {
-  position: fixed;
+  top: 21px;
+  opacity: 0;
   width: 100%;
-  height: 100%;
+  height: 40px;
 }
