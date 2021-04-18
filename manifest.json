@@ -1,6 +1,6 @@
 {
-  "short_name": "Home",
-  "name": "Home",
+  "short_name": "首页",
+  "name": "我的首页",
   "icons": [
     {
       "src": "favicon.ico",
