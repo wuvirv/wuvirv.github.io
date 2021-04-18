@@ -1,6 +1,6 @@
 {
-  "short_name": "首页",
-  "name": "我的首页",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
